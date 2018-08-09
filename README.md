@@ -1,5 +1,5 @@
-# eventApp -version -1
-   This Mini Project provides Basic Under Registeration and Login Using MEAN
+# eventApp-version-1
+   This Mini Project provides Basic Understanding Registeration and Login Using MEAN
    
 # Technologies used:
     Mlab
