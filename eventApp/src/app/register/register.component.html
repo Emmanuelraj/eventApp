@@ -1,0 +1,90 @@
+<p>
+  register works!
+</p>
+
+
+
+
+ <div class="row">
+      <h1>Register Form </h1>
+     <div class="col-sm-6 col-md-offset-3">
+
+          <form class="form-horizontal">
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="username"> Name:</label>
+              <div class="col-sm-10">
+                <input type="text"  class="form-control" name="username" [(ngModel)]="registeredUserData.name" required>
+              </div>
+
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+              <input type="email" class="form-control" name="password" [(ngModel)]="registeredUserData.email" required>
+            </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="username">User Name:</label>
+              <div class="col-sm-10">
+              <input type="text"  class="form-control" name="username" [(ngModel)]="registeredUserData.username" required>
+            </div>
+            </div>
+            <div class="form-group">
+              <label  class="control-label col-sm-2" for="password">Password:</label>
+              <div class="col-sm-10">
+              <input type="password" class="form-control" name="password" [(ngModel)]="registeredUserData.password" required>
+            </div>
+          </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="confirmPassword">Confirm Password:</label>
+                <div class="col-sm-10">
+              <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="registeredUserData.confirmPassword" required>
+            </div>
+          </div>
+
+        
+          <div class="form-group">
+               <div class="col-md-offset-3">
+                 <button type="submit" class="btn btn-primary" (click)="register()">Register</button>
+                </div>
+           </div>
+          </form>
+
+     </div>
+
+ </div>
+
+
+
+
+
+<script type="text/javascript">
+  var opt1 = document.getElementById('opt1');
+  opt1.addEventListener('click', opt)
+
+
+  function opt()
+  {
+     alert('hi')
+      document.getElementById('opt2').disabled = true
+  }
+
+
+var opt2 = document.getElementById('opt2');
+ opt2.addEventListener('click', opti2)
+
+
+ function opti2()
+ {
+    console.log('option 2')
+    alert('hi')
+    document.getElementById('opt1').disabled = true
+
+ }
+
+
+
+</script>

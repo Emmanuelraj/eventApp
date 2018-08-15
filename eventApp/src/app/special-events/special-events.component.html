@@ -1,0 +1,28 @@
+<p>
+  special-events works!
+</p>
+
+   {{specialEvents.length}}
+
+
+<!-- All div Everything should be in container-->
+<div class="container">
+
+      <h1> Events </h1>
+  <div class="row">
+
+      <div class="col-sm-6 col-md-3" *ngFor ="let special of specialEvents">
+        <div class="thumbnail">
+          <div class="caption">
+            <p class="title">{{special.name}}</p>
+            <p class="description">{{special.description}}</p>
+            <div class="clearfix">
+                <a href="#" class="btn btn-success">Buy Tickets</a>
+            </div>
+
+
+        </div>
+        </div>
+      </div>
+</div>
+</div>
